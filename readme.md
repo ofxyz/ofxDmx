@@ -39,3 +39,10 @@ If everything went Ok, you should now be able to open the generated project and 
 Development Notes for updating to include the Enttec OpenDMX module
 
 http://www.enttec.com/download/examples/OpenDMX.cs
+
+## Runig on Raspberry Pi
+
+    [notice ] ofSerial: [0] = ttyUSB0
+    [notice ] ofSerial: opening /dev/tty.usbserial-EN143965 @ 57600 bps
+    [ error ] ofSerial: unable to open /dev/tty.usbserial-EN143965
+
