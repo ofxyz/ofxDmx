@@ -32,7 +32,7 @@ bool ofxDmx::connect(int device, unsigned int channels) {
 	return connected;
 }
 
-bool ofxDmx::connect(string device, unsigned int channels) {
+bool ofxDmx::connect(std::string device, unsigned int channels) {
 	serial.listDevices();
 	connected = serial.setup(device.c_str(), 57600);
 	setChannels(channels);
