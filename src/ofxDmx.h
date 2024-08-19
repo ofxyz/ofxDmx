@@ -23,13 +23,14 @@ public:
 	
 	void setChannels(unsigned int channels = 24); // change the number of channels
 	bool isConnected();
-	
+
+	ofSerial serial;
+
 private:	
 	int connected;
 	int universes;
 	std::vector<unsigned char> levels;
 	std::vector<unsigned char> levels2;	// 2nd universe, only for MK2
-	ofSerial serial;
 	bool needsUpdate;
 	
 	bool badChannel(unsigned int channel);

@@ -88,9 +88,6 @@ void ofxDmx::activateMk2(unsigned char key0, unsigned char key1, unsigned char k
 	ofSleepMillis(200);
 	cout << "MK2: activated with API key" << endl;
 
-
-
-
 	// step 2, enable both ports
 	dataSize = 2;
 	packetSize = DMX_PRO_HEADER_SIZE + dataSize + DMX_PRO_END_SIZE;
