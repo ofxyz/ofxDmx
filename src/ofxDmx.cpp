@@ -27,8 +27,8 @@ ofxDmx::~ofxDmx() {
 
 bool ofxDmx::connect(int device, unsigned int channels) {
 	serial.listDevices();
-	connected = serial.setup(device, 57600); 
-	setChannels(channels);
+	connected = serial.setup(device, 57600);
+	if(connected) setChannels(channels);
 	return connected;
 }
 
